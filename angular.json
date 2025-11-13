@@ -5,7 +5,9 @@
   "projects": {
     "00604": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
