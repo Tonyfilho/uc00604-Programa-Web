@@ -1,0 +1,73 @@
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  color: #333;
+  line-height: 1.6;
+}
+
+app-header {
+  width: 100%;
+  min-height: max-content;
+}
+
+/* Conteúdo principal */
+app-main {
+  flex: 1;
+  min-height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center; 
+  background-color: var(--background-color);
+}
+
+/* Rodapé */
+app-footer {
+  width: 100%;
+  min-height: max-content;
+}
+
+/* Media Queries para responsividade */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+  main {
+    justify-content: center;
+    padding: 0.5rem;
+    min-height: 60vh; /* Ajuste para dar mais espaço ao conteúdo */
+  }
+}
+
+/* Dispositivos móveis */
+@media (max-width: 480px) {
+  body {
+   
+    line-height: 1.5; /* Ajuste fino para melhor legibilidade */
+  }
+  
+  main {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: 60vh;
+    padding: 0.5rem;
+  }
+}
+
+/* Telas muito pequenas (opcional) */
+@media (max-width: 320px) {
+  main {
+    padding: 0.25rem;
+  }
+}

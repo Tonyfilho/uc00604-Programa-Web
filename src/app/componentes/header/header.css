@@ -1,0 +1,130 @@
+/* header.component.scss */
+.header {
+    width: 100%;
+    min-height: max-content;
+    background-color: #d1caca;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+   /* Cabeçalho local */
+   .local-header {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .local-header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem .5rem;
+    text-align: center;
+  }
+  
+  .local-header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .local-header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .nav-content {
+    max-width: 1200px;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: max-content;
+    gap: 25px;
+    background-size: var(--animation-background-size);
+    animation: var(--animation-move-gradient);
+  }
+  
+  .logo-link {
+    /* color: #333; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #007bff;
+    }
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+
+  .logo-link {    
+    font-family: inherit; /* Herda a fonte do elemento pai */
+    font-weight: 500; /* Peso médio para suavidade (não muito fino nem muito negrito) */
+    font-size: 1rem; /* Tamanho padrão ou ajuste conforme necessário */
+    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras para melhor legibilidade */
+    line-height: 1.5; /* Espaçamento confortável entre linhas */
+    color: #333; /* Cor suave (ajuste para o tom desejado) */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: all 0.3s ease; /* Transição suave para hover/focus */
+
+    /* Efeito suave ao interagir */
+    &:hover, &:focus {
+        color: #007bff; /* Cor azul suave no hover (pode ajustar) */
+        text-decoration: underline; /* Sublinhado sutil no hover */
+        text-underline-offset: 3px; /* Distância do sublinhado */
+        text-decoration-thickness: 1px; /* Espessura fina do sublinhado */
+    }
+
+    /* Melhoria para acessibilidade no foco */
+    &:focus {
+        outline: 2px solid rgba(0, 123, 255, 0.3);
+        outline-offset: 2px;
+    }
+}
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  
+
+    }
+    .local-header-content {
+      max-height: 190px;
+    }
+    .nav-content {
+      max-height: 120px;
+      margin-top: 15%;
+    }
+    
+    .logo-link {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-container {
+      padding: 0 12px;
+    }
+    
+    .logo-link {
+      font-size: 1.1rem;
+    }
+  }

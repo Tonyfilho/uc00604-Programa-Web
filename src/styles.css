@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+
+
+:root {
+    --primary-doc-color: linear-gradient(68.15deg, #1e293b 14.62%, #01060f 85.61%);;
+    --secondary-doc-color: linear-gradient(68.15deg, #222 14.62%, #050c1b 85.61%);;
+    --background-color-header: linear-gradient(135deg, #6e8efb, #a777e3); 
+    --background-color: rgba(200, 252, 252, 0.308);  
+    --background-color-sections: #f5f5f5;  
+    --background-color-code: #333;  
+    --animation-move-gradient: moveGradient 3s linear infinite;
+    --animation-background-size: 200% 100%;
+/* Variáveis CSS para cores e tamanhos */
+    --primary-color: rgba(93, 170, 241, 0.925);
+    --text-color-light: aliceblue;
+    --secondary-color: rgba(204, 33, 33, 0.959);
+    --text-color: rgba(0, 0, 0, 0.726);
+    --text-hover: rgba(13, 102, 236, 0.726);
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --border-radius: 10px;
+    --transition: all 0.3s ease;
+    --main-font-family: Arial, sans-serif;
+    --main-line-height: 1.6;
+    --main-font-size: 3rem;
+    --outline: 2px, solid rgba(0,123,255,0.3);
+  
+   
+  }
+  
+
+
+  
+  @keyframes moveGradient {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+
