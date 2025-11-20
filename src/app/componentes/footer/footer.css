@@ -1,0 +1,74 @@
+.site-footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0 0;
+    margin-top: auto; /* Garante que o Footer fique no final */
+    background: var(--primary-doc-color);
+    background-size: var(--animation-background-size);
+    animation: var(--animation-move-gradient);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #4CAF50;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    /* background: #222; */
+    background: var(--secondary-doc-color);
+    background-size: var(--animation-background-size);
+    animation: var(--animation-move-gradient);
+    margin-top: 2rem;
+  }
+  a {
+    color: rgba(93, 170, 241, 0.925);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgba(13, 102, 236, 0.726);
+    text-decoration: overline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
